@@ -20,3 +20,8 @@
 .swiper-pagination {
     position: initial;
 } 
+
+.card__descrição {
+    display: flex;
+    justify-content: space-between;
+}

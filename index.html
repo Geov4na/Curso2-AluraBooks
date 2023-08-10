@@ -59,6 +59,9 @@
 <!-- Slider main container -->
 <div class="swiper">
     <!-- Additional required wrapper -->
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+   
     <div class="swiper-wrapper">
       <!-- Slides -->
       <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro sobre apache kafka e spring boot da alura books"></div>
@@ -69,19 +72,43 @@
       <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="Livro sobre acessibilidade"></div>
       
     </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
   
     <!-- If we need navigation buttons -->
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
-  
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
   </div>
-  </section>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <div class="card">
+    <!-- 1° linha -->
+  <div class="card__descrição">
+    <!-- 1° coluna -->
+  <div class="descrição">
+     <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+     <h2 class="descrição__titulo-livro">Angular 11 e Firebase</h2>
+     <p class="descrição__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+       </div>
+       <!-- 2° coluna -->
+       <img src="img/Angular.svg" class="descrição__imagem">
+    </div>
+
+    <!-- 2° linha -->
+    <div class="card__botões">
+        <!-- 1° colouna -->
+        <ul class="botões">
+            <li class="botões__item"><img scr="img/Favoritos.svg" alt="Favoritar livro"></li>
+            <li class="botões__item"><img scr="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+        </ul>
+        <!-- 2° coluna -->
+        <a heref="#" class="botões__ancora">Saiba mais</a>
+        </div>
+  </div>
+    
+
+</section>
+  
+  
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script>
     const swiper = new Swiper('.swiper', {
     spaceBetween: 10,
